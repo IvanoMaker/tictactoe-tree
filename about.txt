@@ -8,7 +8,15 @@ This game uses a linked-list data structure to find all the moves. Each board st
 is populated with the possible moves which can be placed on that board situation.
 
 All of the game states are represented in a simple Unix text based tree, where each row contains a unique gamestate. 
-Example:
+The gamestate is represented as a 9 length string with each element being either an x, o, or #. The string should be read
+from left to right, with each 3 bits being their respective row and the elements there. a # means that position is empty.
+
+i.e. o#xxx#oxo is the stored state of
+[O][ ][X]  ->  o#x
+[X][X][ ]  ->  xx#
+[O][X][O]  ->  oxo
+
+Example of the tree structure:
 
 ├── o#x#x##xo
 │   ├── o#x#x#oxo
@@ -24,3 +32,5 @@ Example:
 
 According to this program, there are 549,945 possible board situations in tic-tac-toe
 (Length of file) - (1 from the starting state) = 549,946 - 1 = 549,945
+
+The output file is provided on the repository page, however, it has been split into two files (tree_1 and tree_2) with each respective half of the tree file in each one. The original output file is ~30.8 megabytes, which is too much to upload to Git Hub.

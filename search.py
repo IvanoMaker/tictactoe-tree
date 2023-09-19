@@ -72,10 +72,6 @@ class Board:
     def copy(self):
         return copy.deepcopy(self)
 
-class Game:
-    def __init__(self, lst):
-        self.lst = lst
-
 class Node:
     def __init__(self, board, lst):
         self.board = board

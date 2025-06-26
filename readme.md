@@ -22,7 +22,7 @@ i.e. o#xxx#oxo is the stored state of
 [O][X][O]  ->  oxo
 
 Example of the tree structure:
-
+```
 ├── o#x#x##xo
 │   ├── o#x#x#oxo
 │   │   ├── o#x#xxoxo
@@ -34,7 +34,7 @@ Example of the tree structure:
 │   │   │   │   └── oxxxxooxo
 │   │   │   └── ooxxx#oxo
 │   │   │       └── ooxxxxoxo
-
+```
 According to this program, there are 549,945 possible board situations in tic-tac-toe
 (Length of file) - (1 from the starting state) = 549,946 - 1 = 549,945
 
